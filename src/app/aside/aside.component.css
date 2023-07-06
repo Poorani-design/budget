@@ -1,0 +1,17 @@
+aside{
+    /* background-color: rgb(238, 238, 238); */
+    background:#f8f8f8;
+    height:80vh;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    margin:10px;
+    gap:1rem
+}
+.menu-list > .menu-list-icon{
+    font-size: 1.5rem;
+}
+.menu-list > .menu-list-heading{
+    cursor: pointer;
+}

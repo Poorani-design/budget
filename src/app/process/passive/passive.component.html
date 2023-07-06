@@ -1,0 +1,30 @@
+<div class="table-responsive">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Source of Income</th>
+            <th>Name of the company</th>
+            <th>Income Amount</th>
+            <th>Remarks</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+       <tbody>
+        <tr *ngFor="let passive of passiveArray ;let i=index;">
+            <td>{{i+1}}</td>
+            <td>{{passive.pdate}}</td>
+            <td>{{passive.pname}}</td>
+            <td>{{passive.pcompany}}</td>
+            <td>{{passive.pamount}}</td>
+            <td>{{passive.premarks}}</td>
+            <td><a href="#">View</a></td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+       </tbody>
+    </table>
+</div>

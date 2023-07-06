@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Date</th>
+            <th>Total Expense</th>
+            <th>Remarks</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+       <tbody>
+        <tr *ngFor="let expense of expenseArray ;let i=index;">
+            <td>{{i+1}}</td>
+            <td>{{expense.edate}}</td>
+            <td>{{expense.eamount}}</td>
+            <td>{{expense.eremarks}}</td>
+            <td><a  routerLink="view/{{expense.eid}}">View</a></td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+        </tr>
+       </tbody>
+    </table>
+</div>
