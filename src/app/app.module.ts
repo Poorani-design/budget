@@ -16,13 +16,13 @@ import { MenuComponent } from './process/menu/menu.component';
 import {HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
-import { ViewInvestmentComponent } from './process/view/view-investment/view-investment.component';
-import { ViewInvestmentCategoryComponent } from './process/view/view-investment-category/view-investment-category.component';
-import { ViewSalaryComponent } from './process/view/view-salary/view-salary.component';
-import { ViewPassiveComponent } from './process/view/view-passive/view-passive.component';
-import { ViewProfileComponent } from './process/view/view-profile/view-profile.component';
-import { ViewExpenseComponent } from './process/view/view-expense/view-expense.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditExpenseComponent } from './process/edit/edit-expense/edit-expense.component';
+import { EditInvestmentComponent } from './process/edit/edit-investment/edit-investment.component';
+import { EditInvestmentCategoryComponent } from './process/edit/edit-investment-category/edit-investment-category.component';
+import { EditPassiveComponent } from './process/edit/edit-passive/edit-passive.component';
+import { EditSalaryComponent } from './process/edit/edit-salary/edit-salary.component';
+import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-user-profile.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +38,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     UserProfileComponent,
     AsideComponent,
     MenuComponent,
-    ViewInvestmentComponent,
-    ViewInvestmentCategoryComponent,
-    ViewSalaryComponent,
-    ViewPassiveComponent,
-    ViewProfileComponent,
-    ViewExpenseComponent
+    EditExpenseComponent,
+    EditInvestmentComponent,
+    EditInvestmentCategoryComponent,
+    EditPassiveComponent,
+    EditSalaryComponent,
+    EditUserProfileComponent
   ],
   imports: [
     BrowserModule,FormsModule,

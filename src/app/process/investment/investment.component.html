@@ -6,7 +6,6 @@
             <th>Date</th>
             <th>Total Expense</th>
             <th>Remarks</th>
-            <th>View</th>
             <th>Edit</th>
             <th>Remove</th>
         </tr>
@@ -17,8 +16,7 @@
             <td>{{investment.idate}}</td>
             <td>{{investment.iamount}}</td>
             <td>{{investment.iremarks}}</td>
-            <td><a routerLink="view/{{investment.iid}}">View</a></td>
-            <td><a href="#">Edit</a></td>
+            <td><a routerLink="edit/{{investment.iid}}">Edit</a></td>
             <td><a href="#">Delete</a></td>
         </tr>
        </tbody>

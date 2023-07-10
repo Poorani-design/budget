@@ -1,0 +1,5 @@
+ interface expense {
+  ename?: string;
+  eprice?: string;
+  itemremark?: string;
+}

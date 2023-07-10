@@ -1,0 +1,19 @@
+<p>edit-investment works!</p>
+<form action="" [formGroup]="investmentForm" enctype="multipart/form-data" (ngSubmit)="submitInvestment()">
+    Date:
+    investmentCategory:
+    <input type="text" name="" id="" formControlName="iid"><br />
+    User ID:
+    <input type="text" name="" id="" formControlName="uid"><br />
+    Date of Investment
+    <input type="text" name="" id="" formControlName="idate"><br />
+    Total Amount:
+
+    <input type="text" name="" id="" formControlName="iamount"><br />
+    Remarks:
+    <input type="text" name="" id="" formControlName="iremarks"><br />
+
+
+    <button class="btn btn-success">Save</button>
+    <button class="btn btn-danger" routerLink="/investment">Close</button>
+</form>

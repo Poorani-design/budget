@@ -7,7 +7,7 @@
             <th>Investment Start Date</th>
             <th>Investment End date</th>
             <th>Investment Flow Period</th>
-            <th>View</th>
+
             <th>Edit</th>
             <th>Remove</th>
         </tr>
@@ -19,8 +19,7 @@
             <td>{{ic.istartdate}}</td>
             <td>{{ic.ienddate}}</td>
             <td>{{ic.iperiod}}</td>
-            <td><a routerLink="view/{{ic.icid}}">View</a></td>
-            <td><a href="#">Edit</a></td>
+            <td><a routerLink="edit/{{ic.icid}}">Edit</a></td>
             <td><a href="#">Delete</a></td>
         </tr>
        </tbody>

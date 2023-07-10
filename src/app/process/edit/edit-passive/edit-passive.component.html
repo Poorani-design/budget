@@ -1,0 +1,20 @@
+<p>edit-passive works!</p>
+<form action="" [formGroup]="passiveForm" enctype="multipart/form-data" (ngSubmit)="submitPassive()">
+User id
+    <input type="text" name="" id="" formControlName="uid"><br />
+    Name :
+    <input type="text" name="" id="" formControlName="pname"><br />
+    Name of the company: 
+    <input type="text" name="" id="" formControlName="pcompany"><br />
+    Amount:
+    <input type="text" name="" id="" formControlName="pamount"><br />
+    Received Date:
+
+    <input type="text" name="" id="" formControlName="pdate"><br />
+    Remarks:
+    <input type="text" name="" id="" formControlName="premarks"><br />
+
+
+    <button class="btn btn-success" type="submit">Save</button>
+    <button class="btn btn-danger" routerLink="/passive">Close</button>
+</form>

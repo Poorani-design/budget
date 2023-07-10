@@ -1,0 +1,26 @@
+<p>edit -expense works!</p>
+<form action="" [formGroup]="expenseForm" enctype="multipart/form-data" (ngSubmit)="submitExpense()">
+    Date:
+    <input type="text" name="" id="" formControlName="edate"><br />
+    Total Amount:
+
+    <input type="text" name="" id=""  formControlName="eamount"><br />
+    <br />
+    Expense List:
+    <div formArrayName="expense" *ngFor="let exp of expense.controls;let i=index;">
+   
+        <div formGroupName="{{i}}">
+            <input type="text" name="" id="" id="{{'ename'+i}}" formControlName="ename">
+            <input type="text" name="" id="" id="{{'eprice'+i}}" formControlName="eprice">
+            <input type="text" name="" id="" id="{{'itemremark'+i}}" formControlName="itemremark">
+        </div>
+    </div>
+
+    <button class="btn btn-success" (click)="addExpense()">Add More Expense</button>
+    <br />
+    <br />
+    Remarks:
+    <input type="text" name="" id="" formControlName="eremarks"><br />
+    <button class="btn btn-success">Save</button>
+    <button class="btn btn-danger" routerLink="/expense">Close</button>
+</form>

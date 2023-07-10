@@ -1,0 +1,21 @@
+<p>edit-investment-category works!</p>
+<form action="" [formGroup]="investmentCategoryForm" enctype="multipart/form-data" (ngSubmit)="submitInvestmentCategory()">
+    Date:
+    investmentCategory:
+    <input type="text" name="" id="" formControlName="icid"><br />
+    User ID:
+    <input type="text" name="" id="" formControlName="uid"><br />
+    Name of the investment: 
+    <input type="text" name="" id="" formControlName="iname"><br />
+    Date of Investment
+    <input type="text" name="" id="" formControlName="istartdate"><br />
+    Total Amount:
+
+    <input type="text" name="" id="" formControlName="ienddate"><br />
+    Remarks:
+    <input type="text" name="" id="" formControlName="iperiod"><br />
+
+
+    <button class="btn btn-success">Save</button>
+    <button class="btn btn-danger" routerLink="/category">Close</button>
+</form>

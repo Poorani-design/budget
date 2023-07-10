@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { EditExpenseComponent } from './process/edit/edit-expense/edit-expense.component';
+import { EditInvestmentCategoryComponent } from './process/edit/edit-investment-category/edit-investment-category.component';
+import { EditInvestmentComponent } from './process/edit/edit-investment/edit-investment.component';
+import { EditPassiveComponent } from './process/edit/edit-passive/edit-passive.component';
+import { EditSalaryComponent } from './process/edit/edit-salary/edit-salary.component';
+import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-user-profile.component';
 import { ExpenseComponent } from './process/expense/expense.component';
 import { InvestmentCategoryComponent } from './process/investment-category/investment-category.component';
 import { InvestmentComponent } from './process/investment/investment.component';
@@ -9,13 +13,6 @@ import { MenuComponent } from './process/menu/menu.component';
 import { PassiveComponent } from './process/passive/passive.component';
 import { SalaryComponent } from './process/salary/salary.component';
 import { UserProfileComponent } from './process/user-profile/user-profile.component';
-import { ViewExpenseComponent } from './process/view/view-expense/view-expense.component';
-import { ViewInvestmentCategoryComponent } from './process/view/view-investment-category/view-investment-category.component';
-import { ViewInvestmentComponent } from './process/view/view-investment/view-investment.component';
-import { ViewPassiveComponent } from './process/view/view-passive/view-passive.component';
-import { ViewProfileComponent } from './process/view/view-profile/view-profile.component';
-import { ViewSalaryComponent } from './process/view/view-salary/view-salary.component';
-
 
 const routes: Routes = [
   // {path :'main',component:MainComponent, outlet:'main',
@@ -23,16 +20,16 @@ const routes: Routes = [
   { path: '', component: MenuComponent },
   { path: 'expense', component: ExpenseComponent },
   { path: 'investment', component: InvestmentComponent },
-  { path: 'investment_category', component: InvestmentCategoryComponent },
+  { path: 'category', component: InvestmentCategoryComponent },
   { path: 'salary', component: SalaryComponent },
   { path: 'passive', component: PassiveComponent },
   { path: 'profile', component:  UserProfileComponent},
-  { path: 'expense/view/:id', component:  ViewExpenseComponent},
-  { path: 'investment/view/:id', component:  ViewInvestmentComponent},
-  { path: 'investment_category/view/:id', component:  ViewInvestmentCategoryComponent},
-  { path: 'salary/view/:id', component:  ViewSalaryComponent},
-  { path: 'passive/view/:id', component:  ViewPassiveComponent},
-  { path: 'profile/view/:id', component:  ViewProfileComponent}
+  { path: 'expense/edit/:id', component:  EditExpenseComponent},
+  { path: 'investment/edit/:id', component:  EditInvestmentComponent},
+  { path: 'category/edit/:id', component:  EditInvestmentCategoryComponent},
+  { path: 'salary/edit/:id', component:  EditSalaryComponent},
+  { path: 'passive/edit/:id', component:  EditPassiveComponent},
+  { path: 'profile/edit/:id', component:  EditUserProfileComponent}
   
 ]
 // }

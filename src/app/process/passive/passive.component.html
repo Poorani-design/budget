@@ -8,7 +8,6 @@
             <th>Name of the company</th>
             <th>Income Amount</th>
             <th>Remarks</th>
-            <th>View</th>
             <th>Edit</th>
             <th>Remove</th>
         </tr>
@@ -21,8 +20,7 @@
             <td>{{passive.pcompany}}</td>
             <td>{{passive.pamount}}</td>
             <td>{{passive.premarks}}</td>
-            <td><a href="#">View</a></td>
-            <td><a href="#">Edit</a></td>
+            <td><a routerLink="edit/{{passive.pid}}">Edit</a></td>
             <td><a href="#">Delete</a></td>
         </tr>
        </tbody>
