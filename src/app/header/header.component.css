@@ -1,4 +1,37 @@
 header{
-    height:10vh;
-    background-color: rgb(143, 102, 102);
+    height:11vh;
+    background: var(--color-dark);
+    color:var(--color-white);
+
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:1.2rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.profile-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem; 
+}
+.logo-section{
+     align-items: center;
+    display: flex;
+    gap:1rem;
+
+}
+.logo-section>h1{
+    font-size: 1.3rem;
+}
+.profile-section-logo > i , .logo-section >i{
+    font-size: 1.3rem;
+}
+.fa-rebel{
+    color:var(--color-success);
+    margin-top:-7px;
+    font-size: 1.6rem !important;
 }

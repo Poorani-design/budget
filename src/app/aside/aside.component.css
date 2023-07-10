@@ -1,17 +1,28 @@
 aside{
-    /* background-color: rgb(238, 238, 238); */
-    background:#f8f8f8;
+    background-color: var(--color-white);
     height:80vh;
+    margin-left:-10px;    
+    box-shadow: var(--box-shadow);
+    transform: transition .1s all;
 }
 .menu-list{
     display: flex;
     align-items: center;
-    margin:10px;
-    gap:1rem
+    gap:1rem;
+    padding:10px;
+    color:var(--color-info-dark);
 }
 .menu-list > .menu-list-icon{
     font-size: 1.5rem;
+    width:30px;
+    text-align: center;
 }
 .menu-list > .menu-list-heading{
     cursor: pointer;
+}
+.aside-menu-list .menu-list:hover{
+    margin-left: 1.5rem;
+    transition: all 300ms ease;
+    color:var(--color-primary)
+
 }

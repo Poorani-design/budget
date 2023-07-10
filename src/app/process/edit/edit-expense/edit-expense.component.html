@@ -6,6 +6,9 @@
 
     <input type="text" name="" id=""  formControlName="eamount"><br />
     <br />
+    
+    Remarks:
+    <input type="text" name="" id="" formControlName="eremarks"><br />
     Expense List:
     <div formArrayName="expense" *ngFor="let exp of expense.controls;let i=index;">
    
@@ -19,8 +22,6 @@
     <button class="btn btn-success" (click)="addExpense()">Add More Expense</button>
     <br />
     <br />
-    Remarks:
-    <input type="text" name="" id="" formControlName="eremarks"><br />
     <button class="btn btn-success">Save</button>
     <button class="btn btn-danger" routerLink="/expense">Close</button>
 </form>

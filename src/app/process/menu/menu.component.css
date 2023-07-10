@@ -1,0 +1,40 @@
+.section{
+    display: flex;
+    background-color: var(--color-white);
+    padding:1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius-2);
+}
+.section-content-value{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.fa{
+    font-size: 1rem;
+}
+.section-content-headings{
+    color:var(--color-info-dark);
+    font-size:1.4rem;
+}
+.section-content-value{
+    font-size: 1rem;
+    font-weight: bold;
+    gap:2px;
+}
+.section-images > i{
+    font-size: 2rem;
+    padding:.8rem;
+    border-radius: var(--border-radius-2);
+    background-color: var(--color-dark);
+}
+.fa-credit-card-alt{
+    color:var(--color-primary);
+}
+.fa-line-chart{
+    color:var(--color-danger);
+}
+.fa-flip-vertical{
+    color:var(--color-warning);
+}
