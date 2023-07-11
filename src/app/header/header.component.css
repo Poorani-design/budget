@@ -1,7 +1,8 @@
 header{
     height:10vh;
-    background: var(--color-dark);
-    color:var(--color-white);
+    background-color: var(--color-white);
+    color:var(--color-dark);
+    box-shadow: var(--box-shadow);
 
 }
 .header{
@@ -46,7 +47,7 @@ header{
     font-size: 1.6rem !important;
 }
 .fa-sun-o{
-    background-color: var(--color-primary);
+    background-color: var(--color-warning);
 }
 .fa-moon-o{
     background-color: var(--color-danger);

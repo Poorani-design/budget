@@ -13,9 +13,11 @@ export class HeaderComponent {
   lightTheme(){
     this.light=true;
     this.dark=false;
+    document.body.classList.remove('dark-theme-variables');
   }
   darkTheme(){
     this.light=false;
     this.dark=true;
+     document.body.classList.add('dark-theme-variables');
   }
 }

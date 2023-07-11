@@ -1,15 +1,17 @@
 aside{
+    margin-top: 2vh;
     background-color: var(--color-white);
-    height:90vh;
-    margin-left:-10px;    
+    height:87vh;
+    /* margin-left:-10px;     */
     box-shadow: var(--box-shadow);
     transform: transition .1s all;
+    border-radius: var(--border-radius-2);
 }
 .menu-list{
     display: flex;
     align-items: center;
     gap:1rem;
-    padding:10px;
+    padding:5px 10px;
     color:var(--color-info-dark);
 }
 .menu-list > .menu-list-icon{
