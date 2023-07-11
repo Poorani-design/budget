@@ -2,7 +2,6 @@ aside{
     margin-top: 2vh;
     background-color: var(--color-white);
     height:87vh;
-    /* margin-left:-10px;     */
     box-shadow: var(--box-shadow);
     transform: transition .1s all;
     border-radius: var(--border-radius-2);
@@ -11,12 +10,12 @@ aside{
     display: flex;
     align-items: center;
     gap:1rem;
-    padding:5px 7px;
+    padding:5px 14px;
     color:var(--color-info-dark);
 }
 .menu-list > .menu-list-icon{
-    font-size: 1.5rem;
-    width:30px;
+    font-size: 1.2rem;
+    width:15px;
     text-align: center;
 }
 .menu-list > .menu-list-heading{

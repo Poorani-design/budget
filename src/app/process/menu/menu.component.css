@@ -42,10 +42,57 @@
 .fa-flip-vertical{
     color:var(--color-warning);
 }
+
  #divChart{
     width: 400px;
     height: 400px;
+    padding:1rem;
 }
-.analysis-text{
-    font-size: 0.9rem;
+.analysis-section{
+    background-color: var(--color-white);
+    padding:10px 1rem;
+    display: flex; 
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    align-items: center;
+    border-radius: var(--border-radius-3);
+}
+
+.analysis-section:hover{
+    box-shadow: var(--box-shadow);
+}
+.analysis-heading{
+    margin-bottom: 1em;
+}
+.analysis-header{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.analysis-content >span{
+    font-size: .8rem;
+}
+.analysis-logo > i {
+    padding:5px;
+    background-color: var(--color-dark);
+    align-items: center;
+    border-radius: 100%;
+}
+.fa-shopping-cart{
+    color:var(--color-primary);
+}
+.fa-info-circle{
+    color:var(--color-danger);
+}
+.analysis-value > .analysis-percentage{
+    font-weight: bold;
+    font-size: 1rem;
+    color:var(--color-danger);
+}
+.analysis-amount > .analysis-value{
+    font-weight: bold;
+    font-size: .9rem;
+    color:var(--color-dark);
+}
+.analysis-content >span{
+    color:var(--color-info-dark)
 }
