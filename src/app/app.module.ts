@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { ExpenseComponent } from './process/expense/expense.component';
 import { InvestmentComponent } from './process/investment/investment.component';
 import { InvestmentCategoryComponent } from './process/investment-category/investment-category.component';
@@ -29,7 +28,6 @@ import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-
     AppComponent,
     DashboardComponent,
     HeaderComponent,
-    FooterComponent,
     ExpenseComponent,
     InvestmentComponent,
     InvestmentCategoryComponent,

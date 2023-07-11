@@ -1,6 +1,6 @@
 aside{
     background-color: var(--color-white);
-    height:80vh;
+    height:90vh;
     margin-left:-10px;    
     box-shadow: var(--box-shadow);
     transform: transition .1s all;
@@ -25,4 +25,8 @@ aside{
     transition: all 300ms ease;
     color:var(--color-primary)
 
+}
+.menu-list:last-child{
+    position: absolute;
+    bottom:0;
 }

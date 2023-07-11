@@ -6,6 +6,9 @@
     justify-content: space-between;
     border-radius: var(--border-radius-2);
 }
+.section:hover{
+    box-shadow: var(--box-shadow);
+}
 .section-content-value{
     display: flex;
     justify-content: start;
@@ -29,6 +32,7 @@
     border-radius: var(--border-radius-2);
     background-color: var(--color-dark);
 }
+
 .fa-credit-card-alt{
     color:var(--color-primary);
 }

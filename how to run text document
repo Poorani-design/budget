@@ -62,3 +62,8 @@ npm outdated
 ng update
 ng update @angular/cli
 npm outdated
+
+
+//install chart js
+npm install chart.js
+
