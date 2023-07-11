@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  light=true;
+  dark=false;
+
+  lightTheme(){
+    this.light=true;
+    this.dark=false;
+  }
+  darkTheme(){
+    this.light=false;
+    this.dark=true;
+  }
 }

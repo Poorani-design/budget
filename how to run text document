@@ -66,4 +66,6 @@ npm outdated
 
 //install chart js
 npm install chart.js
+//follow below link for chart js
+https://sweetcode.io/how-to-build-charts-in-angular-using-chart-js/
 

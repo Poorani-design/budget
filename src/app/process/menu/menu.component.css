@@ -42,3 +42,10 @@
 .fa-flip-vertical{
     color:var(--color-warning);
 }
+ #divChart{
+    width: 400px;
+    height: 400px;
+}
+.analysis-text{
+    font-size: 0.9rem;
+}

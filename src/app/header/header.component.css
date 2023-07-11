@@ -18,6 +18,16 @@ header{
     align-items: center;
     gap:2rem; 
 }
+.profile-section .profile-section-theme{
+    gap:.5rem;
+    display: flex;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+}
+.profile-section .profile-section-theme div > i{
+    padding:6px;
+    border-radius: 50%;
+}
 .logo-section{
      align-items: center;
     display: flex;
@@ -34,4 +44,10 @@ header{
     color:var(--color-success);
     margin-top:-7px;
     font-size: 1.6rem !important;
+}
+.fa-sun-o{
+    background-color: var(--color-primary);
+}
+.fa-moon-o{
+    background-color: var(--color-danger);
 }

@@ -8,7 +8,10 @@
         </div>
         <div class="profile-section">
             <div class="profile-section-theme">
-                theme
+                <div class="dark-theme" *ngIf="dark" (click)="lightTheme()"><i class="fa fa-moon-o" aria-hidden="true"></i>
+                </div>
+                <div class="light-theme" *ngIf="light" (click)="darkTheme()"><i class="fa fa-sun-o" aria-hidden="true"></i>
+                </div>
             </div>
             <div class="profile-section-name">
                 Hey Poorani
@@ -16,9 +19,7 @@
             <div class="profile-section-logo">
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
             </div>
-            <div class="profile-section-info">
-                <i class="fa fa-info" aria-hidden="true"></i>
-            </div>
+         
         </div>
     </div>
 </header>
