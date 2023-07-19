@@ -69,3 +69,14 @@ npm install chart.js
 //follow below link for chart js
 https://sweetcode.io/how-to-build-charts-in-angular-using-chart-js/
 
+
+Steps followed
+=============
+1, Install the below package
+     ng add angular-datatables
+2, Add datatableModule in app.module
+3, Add datatable directive in table
+4, Add dtOptions
+5, Add dtTrigger for refresh data
+
+https://www.youtube.com/watch?v=bihanbsgsoQ

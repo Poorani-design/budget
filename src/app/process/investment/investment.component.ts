@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Subject } from 'rxjs';
 import { ApiService } from 'src/app/api.service';
 
 @Component({
@@ -9,17 +10,23 @@ import { ApiService } from 'src/app/api.service';
 })
 export class InvestmentComponent {
   successMsg: string | undefined;
-
+  dtOptions:DataTables.Settings={};
+  dtTrigger:Subject<any> = new Subject<any>();
   hideModel:boolean=true;
   investmentArray: any;
   constructor(private api:ApiService){ 
     this.getAllInvestment();
    }
+   ngOnInit(){
+    this.dtOptions={
+      pagingType:'simple_numbers'
+    }
+   }
   getAllInvestment(){
     this.api.getAllInvestment().subscribe((res)=>{
       console.log(res);
       this.investmentArray = res.data;
-      
+      this.dtTrigger.next(null);
       return this.investmentArray;
     })  
   }

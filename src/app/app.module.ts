@@ -25,6 +25,7 @@ import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AddExpenseComponent } from './process/add/add-expense/add-expense.component';
 import { AddInvestmentComponent } from './process/add/add-investment/add-investment.component';
+import {DataTablesModule} from 'angular-datatables';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,8 @@ import { AddInvestmentComponent } from './process/add/add-investment/add-investm
     BrowserModule,FormsModule,
     AppRoutingModule,ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    DataTablesModule
   ],
 
   providers: [],

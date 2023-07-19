@@ -6,11 +6,15 @@
     max-height: 80vh;
     width:100%;
     overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
     
 }
 thead tr th, thead tr td, tbody tr td{
     color: var(--color-info-dark);
+}
+.page-item:not(:first-child) .page-link {
+    margin-left: -29px !important;
 }
 /* tr{
     align-items: center;
@@ -30,4 +34,6 @@ td{
 .fa-trash-o{
     color:var(--color-primary);
 }
-
+.dataTables_length{
+    display: none;
+}
