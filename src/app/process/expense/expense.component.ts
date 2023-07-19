@@ -14,6 +14,7 @@ export class ExpenseComponent {
   getAllExpenseData(){
     this.api.getAllExpense().subscribe((res)=>{
       console.log(res);
+      console.log(res.data[0].expense)
       this.expenseArray = res.data;
       
       return this.expenseArray;

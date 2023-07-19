@@ -46,6 +46,14 @@ export class ApiService {
     return this.http.put(`${this.apiUrl}/investment/update/${id}`, data);
   }
 
+  //add investment data
+  addInvestment(data:any):Observable<any>{
+    return this.http.post(`${this.apiUrl}/investment/add/`,data);
+  }
+  //delete expense data
+  deleteInvestment(id: any): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/investment/delete/${id}`);
+  }
   //==================================== INVESTMENT END HERE =======================
 
   //==================================== PASSIVE START HERE =======================

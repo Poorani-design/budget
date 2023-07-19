@@ -22,7 +22,9 @@ import { EditInvestmentCategoryComponent } from './process/edit/edit-investment-
 import { EditPassiveComponent } from './process/edit/edit-passive/edit-passive.component';
 import { EditSalaryComponent } from './process/edit/edit-salary/edit-salary.component';
 import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-user-profile.component';
-
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { AddExpenseComponent } from './process/add/add-expense/add-expense.component';
+import { AddInvestmentComponent } from './process/add/add-investment/add-investment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,10 @@ import { EditUserProfileComponent } from './process/edit/edit-user-profile/edit-
     EditInvestmentCategoryComponent,
     EditPassiveComponent,
     EditSalaryComponent,
-    EditUserProfileComponent
+    EditUserProfileComponent,
+    AboutusComponent,
+    AddExpenseComponent,
+    AddInvestmentComponent
   ],
   imports: [
     BrowserModule,FormsModule,

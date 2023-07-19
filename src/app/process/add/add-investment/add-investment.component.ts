@@ -1,36 +1,16 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/api.service';
-
 @Component({
-  selector: 'app-investment',
-  templateUrl: './investment.component.html',
-  styleUrls: ['./investment.component.css']
+  selector: 'app-add-investment',
+  templateUrl: './add-investment.component.html',
+  styleUrls: ['./add-investment.component.css']
 })
-export class InvestmentComponent {
+export class AddInvestmentComponent {
   successMsg: string | undefined;
-
-  hideModel:boolean=true;
-  investmentArray: any;
-  constructor(private api:ApiService){ 
-    this.getAllInvestment();
-   }
-  getAllInvestment(){
-    this.api.getAllInvestment().subscribe((res)=>{
-      console.log(res);
-      this.investmentArray = res.data;
-      
-      return this.investmentArray;
-    })  
+  constructor(public api:ApiService){
+    
   }
-  removeInvestment(id:any){
-    this.api.deleteInvestment(id).subscribe((res)=>{
-      console.log(res);
-      console.log("deleted");
-      this.getAllInvestment();
-    })
-  }
-  
   investmentForm = new FormGroup({
     icid:new FormControl('',[Validators.required]),
     uid:new FormControl('',[Validators.required]),
@@ -44,11 +24,7 @@ export class InvestmentComponent {
         console.log("Data added success", JSON.stringify(res));
         this.investmentForm.reset();
         this.successMsg="Investment added successfully !";
-        setTimeout(() => {
-          this.successMsg= " ";
-        }, 1000);
-        this.getAllInvestment();
-        this.hideModel=false;
+        
       })
     }
 

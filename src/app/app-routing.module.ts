@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutusComponent } from './aboutus/aboutus.component';
 import { EditExpenseComponent } from './process/edit/edit-expense/edit-expense.component';
 import { EditInvestmentCategoryComponent } from './process/edit/edit-investment-category/edit-investment-category.component';
 import { EditInvestmentComponent } from './process/edit/edit-investment/edit-investment.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'salary', component: SalaryComponent },
   { path: 'passive', component: PassiveComponent },
   { path: 'profile', component:  UserProfileComponent},
+  { path: 'about', component:AboutusComponent},
   { path: 'expense/edit/:id', component:  EditExpenseComponent},
   { path: 'investment/edit/:id', component:  EditInvestmentComponent},
   { path: 'category/edit/:id', component:  EditInvestmentCategoryComponent},

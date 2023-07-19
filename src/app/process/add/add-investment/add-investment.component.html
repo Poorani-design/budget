@@ -1,33 +1,5 @@
-
-<div class="container wrapper">
-    <div class="row mt-3">
-        <div class="table-responsive">
-            <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>S.No</th>
-                    <th>Date</th>
-                    <th>Total Expense</th>
-                    <th>Remarks</th>
-                    <th>Edit</th>
-                    <th>Remove</th>
-                </tr>
-            </thead>
-               <tbody>
-                <tr *ngFor="let investment of investmentArray ;let i=index;" class=" justify-content-center align-content-center">
-                    <td>{{i+1}}</td>
-                    <td>{{investment.idate}}</td>
-                    <td>{{investment.iamount}}</td>
-                    <td>{{investment.iremarks}}</td>
-                    <td><a routerLink="edit/{{investment.iid}}" class=""><i class=" fa fa-info-circle"></i></a></td>
-                    <td><a (click)="removeInvestment(investment.iid)" ><i class="fa fa-trash-o"></i></a></td>
-                </tr>
-               </tbody>
-            </table>
-        </div>
-        <div class="container d-flex justify-content-end investment-btn">
-            <!-- Button trigger modal -->
-<div class="containe0r pull-right">
+<!-- Button trigger modal -->
+<div class="container">
     <button type="button" (click)="addInvestment()" class="btn btn-primary btn-sm" data-toggle="modal"
         data-target="#exampleModal">
         <i class="fa fa-plus"></i> 
@@ -35,7 +7,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -80,10 +52,6 @@
                 <button type="button" class="btn btn-danger btn-sm"  data-dismiss="modal"  routerLink="investment/" >Close</button>
                 <button type="button" class="btn btn-primary btn-sm" (click)="addInvestment()">Submit</button>
             </div>
-        </div>
-    </div>
-</div>
-            
         </div>
     </div>
 </div>

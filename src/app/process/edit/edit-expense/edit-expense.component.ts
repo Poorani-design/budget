@@ -18,17 +18,24 @@ import { ApiService } from 'src/app/api.service';
 export class EditExpenseComponent {
   getParamid: any;
   expense$:Observable<[]> | undefined;
+  arr: any;
   ngOnInit(): void {
     this.getParamid = this.route.snapshot.paramMap.get('id');
     console.log(this.getParamid);
     if (this.getParamid) {
       this.api.singleExpense(this.getParamid).subscribe((res) => {
-        console.log(res.data);
+        // console.log(res.data);
+        // console.log(res.data[0].expense);
+        // console.log(JSON.parse(res.data[0].expense));
+
+        this.arr = JSON.parse(res.data[0].expense);
+        console.log(this.arr);
         this.expenseForm.patchValue({
           edate: res.data[0].edate,
           eamount: res.data[0].eamount,
           eremarks: res.data[0].eremarks,
-          expense: res.data[0].expense,
+          // expense: res.data[0].expense,
+         
         });
       });
     }

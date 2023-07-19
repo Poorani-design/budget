@@ -41,6 +41,7 @@ export class EditInvestmentComponent {
     if(this.investmentForm.status == 'VALID'){
       this.api.updateInvestment(this.investmentForm.value, this.getparamsid).subscribe((res)=>{
         console.log(res, "updated investment");
+  
       })
     }
   }

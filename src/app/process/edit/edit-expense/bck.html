@@ -1,0 +1,32 @@
+<p>edit -expense works!</p>
+<form action="" [formGroup]="expenseForm" enctype="multipart/form-data" (ngSubmit)="submitExpense()">
+    Date:
+    <input type="text" name="" id="" formControlName="edate"><br />
+    Total Amount:
+
+    <input type="text" name="" id=""  formControlName="eamount"><br />
+    <br />
+    
+    Remarks:
+    <input type="text" name="" id="" formControlName="eremarks"><br />
+    Expense List:
+    <!-- *ngFor="let exp of expense.controls;let i=index;"  -->
+    <div formArrayName=""  *ngFor=" let a of arr;let i=index;" >
+   {{a.ename}} {{a.eprice}} {{a.itemremark}}
+   <br/>
+        <input type="text" name="" id=""  formControlName="" value="{{a.ename}}"> 
+        <div>
+            <!-- <input type="text" name="" id=""  formControlName="" value="{{arr[i].eprice}}"> {{i}} {{arr[i].ename}}
+            <input type="text" name="" id=""  formControlName="" value="{{arr[i].itemremark}}">  -->
+
+            <!-- <input type="text" name="" id="" id="{{'eprice'+i}}" formControlName="eprice"> -->
+            <!-- <input type="text" name="" id="" id="{{'itemremark'+i}}" formControlName="itemremark"> -->
+        </div>
+    </div>
+
+    <button class="btn btn-success" (click)="addExpense()">Add More Expense</button>
+    <br />
+    <br />
+    <button class="btn btn-success">Save</button>
+    <button class="btn btn-danger" routerLink="/expense">Close</button>
+</form>bck

@@ -1,0 +1,16 @@
+.wrapper{
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+}
+.title{
+    color:var(--color-info-dark);
+}
+input , select{
+    background-color: var(--color-white);
+    color:var(--color-info-white);
+}
+input:focus , select:focus{
+    background-color: var(--color-white);
+    color:var(--color-info-white);
+}

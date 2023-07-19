@@ -1,0 +1,33 @@
+
+.wrapper{
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    padding:1rem 2rem;
+    max-height: 80vh;
+    width:100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+thead tr th, thead tr td, tbody tr td{
+    color: var(--color-info-dark);
+}
+/* tr{
+    align-items: center;
+}
+td{
+    align-items: center;
+    padding-top: 5px;
+    margin:0;
+
+} */
+.fa{
+    cursor: pointer;
+}
+.fa-info-circle{
+    color:var(--color-dark)
+}
+.fa-trash-o{
+    color:var(--color-primary);
+}
+
